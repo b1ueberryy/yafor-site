@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TRELLEBORG — уплотнения и расходные материалы</title>
-  <meta name="description" content="TRELLEBORG — инженерные полимерные решения для пищевой промышленности">
+  <title>Заказ коммерческого предложения — ЯFOR</title>
+  <meta name="description" content="Оставьте заявку на сайте ЯFOR — подготовим коммерческое предложение на упаковочное и технологическое оборудование под вашу задачу.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=cyrillic,latin" rel="stylesheet">
@@ -64,25 +64,39 @@
 
   <main>
 
-    <section class="brand-hero">
+    <section class="page-header">
       <div class="container">
-        <img src="images/partner-trelleborg.png" alt="Trelleborg" style="max-width: 300px;">
-        <div class="intro-box">
-          TRELLEBORG — мировой лидер в области инженерных полимерных решений для пищевой промышленности
-        </div>
+        <h1>Заказ коммерческого предложения</h1>
+        <p class="lead">
+          Оставьте заявку — наши специалисты подберут оборудование под вашу задачу
+          и подготовят коммерческое предложение. Также можно позвонить по телефону
+          <strong>+7 (495) 708-41-29</strong> или написать на
+          <a href="mailto:info@yaforys.ru" class="footer-accent">info@yaforys.ru</a>.
+        </p>
       </div>
     </section>
 
-    <section class="category-section">
+    <!-- ЗАПРОС КОММЕРЧЕСКОГО ПРЕДЛОЖЕНИЯ -->
+    <section class="request-section" id="request">
       <div class="container">
-        <p class="category-description">
-          TRELLEBORG — шведская компания, производящая уплотнения, манжеты, шланги и другие полимерные
-          изделия для пищевого производства. Мы являемся официальным дилером и предоставляем полный спектр продукции.
+        <h2 class="section-title section-title-light">Заполните заявку</h2>
+        <p class="section-subtitle subtitle-light">
+          Поля «Имя» и «Телефон» обязательны
         </p>
-        <div class="order-form">
-          <p>Мы всегда готовы оперативно ответить на ваши вопросы! Пожалуйста, свяжитесь с нами в рабочее время с понедельника по пятницу с 9:00 до 18:00</p>
-          <a href="mailto:info@yaforys.ru" class="btn-primary">Связаться с нами</a>
-        </div>
+
+        <form class="request-form" id="request-form" novalidate>
+          <div class="request-row">
+            <input type="text" name="name" class="request-input" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" class="request-input" placeholder="Телефон" required>
+          </div>
+          <div class="request-row">
+            <input type="text" name="company" class="request-input" placeholder="Компания">
+            <input type="email" name="email" class="request-input" placeholder="E-mail">
+          </div>
+          <textarea name="message" class="request-input request-textarea" placeholder="Какое оборудование интересует?"></textarea>
+          <button type="submit" class="btn-primary request-submit">Запросить КП</button>
+          <p class="request-note" id="request-note" aria-live="polite"></p>
+        </form>
       </div>
     </section>
 
@@ -125,6 +139,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="index.js"></script>
 
 </body>
 </html>
