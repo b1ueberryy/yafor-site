@@ -72,10 +72,24 @@
     </div>
   </header>
 
+  <!-- ГЕРОЙ-БЛОК С ФОНОВЫМ ВИДЕО -->
+  <section class="hero-video-section">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero-poster.jpg">
+      <source src="videos/hero.webm" type="video/webm">
+      <source src="videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+    <div class="hero-video-content">
+      <h1 class="hero-video-title">Комплексные решения<br>для пищевых производств</h1>
+      <p class="hero-video-subtitle">Упаковочное и технологическое оборудование от ведущих мировых производителей</p>
+      <a href="#about" class="btn-primary hero-video-cta">Узнать больше</a>
+    </div>
+  </section>
+
   <main>
 
     <!-- БЛОК О КОМПАНИИ -->
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="container">
         <div class="about-logo">
           <img src="images/logo-large.png" alt="ЯFOR Your Solution">
