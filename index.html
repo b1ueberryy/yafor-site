@@ -107,6 +107,33 @@
       </div>
     </section>
 
+    <!-- КОМПАНИЯ В ЦИФРАХ -->
+    <section class="stats-section">
+      <div class="container">
+        <h2 class="section-title section-title-light">Компания в цифрах</h2>
+        <p class="section-subtitle subtitle-light">Опыт на российском рынке с 2003 года</p>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number" data-count="20" data-suffix="+">0</div>
+            <div class="stat-label">лет опыта на рынке<br>(с 2003 года)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="150" data-suffix="+">0</div>
+            <div class="stat-label">реализованных<br>проектов</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="50" data-suffix="+">0</div>
+            <div class="stat-label">регионов поставок<br>по России</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="1000" data-suffix="+">0</div>
+            <div class="stat-label">единиц поставленного<br>оборудования</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ПАРТНЁРЫ -->
     <section class="partners-section">
       <div class="container">
@@ -159,6 +186,45 @@
 
         <div class="section-cta">
           <a href="#" class="btn-primary">Узнать больше о наших услугах</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК МЫ РАБОТАЕМ (ПОД КЛЮЧ) -->
+    <section class="process-section">
+      <div class="container">
+        <h2 class="section-title section-title-blue">Как мы работаем</h2>
+        <p class="section-subtitle">
+          Реализуем проекты перерабатывающих предприятий «под ключ» —<br>
+          от приёмки сырья до отгрузки готовой продукции
+        </p>
+
+        <div class="process-grid">
+          <div class="process-step">
+            <div class="process-num">1</div>
+            <h3>Приёмка сырья</h3>
+            <p>Организация линии приёмки скота, птицы, замороженного сырья или молока.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">2</div>
+            <h3>Проектирование</h3>
+            <p>Проектная и рабочая документация, подбор оборудования под задачи производства.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">3</div>
+            <h3>Поставка оборудования</h3>
+            <p>Поставка технологических линий ведущих мировых производителей.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">4</div>
+            <h3>Монтаж и пуско-наладка</h3>
+            <p>Строительство, монтаж, подключение коммуникаций и запуск линии.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-num">5</div>
+            <h3>Сдача «под ключ»</h3>
+            <p>Выдача готовой паллеты на склад, сервис и поставка запчастей.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -216,6 +282,30 @@
       </div>
     </section>
 
+    <!-- ЗАПРОС КОММЕРЧЕСКОГО ПРЕДЛОЖЕНИЯ -->
+    <section class="request-section" id="request">
+      <div class="container">
+        <h2 class="section-title section-title-light">Запросить коммерческое предложение</h2>
+        <p class="section-subtitle subtitle-light">
+          Оставьте контакты — подготовим предложение под вашу задачу
+        </p>
+
+        <form class="request-form" id="request-form" novalidate>
+          <div class="request-row">
+            <input type="text" name="name" class="request-input" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" class="request-input" placeholder="Телефон" required>
+          </div>
+          <div class="request-row">
+            <input type="text" name="company" class="request-input" placeholder="Компания">
+            <input type="email" name="email" class="request-input" placeholder="E-mail">
+          </div>
+          <textarea name="message" class="request-input request-textarea" placeholder="Какое оборудование интересует?"></textarea>
+          <button type="submit" class="btn-primary request-submit">Запросить КП</button>
+          <p class="request-note" id="request-note" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <!-- ФУТЕР -->
@@ -262,7 +352,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
 
 </body>
 </html>

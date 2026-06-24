@@ -1261,3 +1261,214 @@ a:hover {
     font-size: 19px;
   }
 }
+
+/* =======================================================
+   КОМПАНИЯ В ЦИФРАХ
+   ======================================================= */
+
+.section-title-light {
+  color: #fff;
+}
+
+.subtitle-light {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.stats-section {
+  padding: 60px 0;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 30px auto 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.stat-number {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 15px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* =======================================================
+   КАК МЫ РАБОТАЕМ (ПОД КЛЮЧ)
+   ======================================================= */
+
+.process-section {
+  padding: 60px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 40px auto 0;
+}
+
+.process-step {
+  position: relative;
+  text-align: center;
+  padding: 0 6px;
+}
+
+/* соединительная линия между шагами */
+.process-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 26px;
+  left: calc(50% + 34px);
+  right: calc(-50% + 34px);
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+.process-num {
+  position: relative;
+  z-index: 1;
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.process-step h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0 0 8px;
+  line-height: 1.25;
+}
+
+.process-step p {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* =======================================================
+   ЗАПРОС КОММЕРЧЕСКОГО ПРЕДЛОЖЕНИЯ
+   ======================================================= */
+
+.request-section {
+  padding: 60px 0;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.request-form {
+  max-width: 620px;
+  margin: 30px auto 0;
+}
+
+.request-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.request-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 15px;
+  background: #fff;
+  color: var(--color-text);
+  outline: none;
+}
+
+.request-input::placeholder {
+  color: #9aa0b0;
+}
+
+.request-textarea {
+  display: block;
+  width: 100%;
+  min-height: 110px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+.request-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 44px;
+  border: none;
+  cursor: pointer;
+}
+
+.request-note {
+  text-align: center;
+  margin: 16px 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  min-height: 18px;
+}
+
+/* =======================================================
+   АДАПТАЦИЯ НОВЫХ СЕКЦИЙ
+   ======================================================= */
+
+@media (max-width: 900px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 20px;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 36px 20px;
+  }
+
+  .process-step::after {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 44px;
+  }
+
+  .request-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
