@@ -78,14 +78,16 @@
         <h2 class="category-title">Машины для формирования и склеивания лотков</h2>
         <div class="products-grid ulma-grid">
 
-        <div class="ulma-card ulma-card-static">
+        <a href="#" class="ulma-card product-more" data-id="1">
           <span class="ulma-card-img"><img src="images/boix-q1530.jpg" alt="Машина для формирования и склеивания лотков открытого типа из гофрированного картона Q-1530" loading="lazy"></span>
           <h3 class="ulma-card-name">Машина для формирования и склеивания лотков открытого типа из гофрированного картона Q-1530</h3>
-        </div>
-        <div class="ulma-card ulma-card-static">
+          <span class="ulma-card-more">Подробнее &rarr;</span>
+        </a>
+        <a href="#" class="ulma-card product-more" data-id="2">
           <span class="ulma-card-img"><img src="images/boix-q4000.jpg" alt="Машина для формирования и склеивания гофрокартонных лотков с открытым верхом Q-4000" loading="lazy"></span>
           <h3 class="ulma-card-name">Машина для формирования и склеивания гофрокартонных лотков с открытым верхом Q-4000</h3>
-        </div>
+          <span class="ulma-card-more">Подробнее &rarr;</span>
+        </a>
         </div>
         <div class="order-form">
           <p>Оставьте заявку на интересующее Вас оборудование. Заполните форму или позвоните по телефону <strong>8 (495) 708-41-29</strong> и мы свяжемся с Вами в рабочее время с пнд. по пт. с 10:00 до 19:00</p>
@@ -95,6 +97,22 @@
     </section>
 
   </main>
+
+  <!-- МОДАЛКА: подробнее о товаре -->
+  <div class="pm-modal" id="pm-modal" aria-hidden="true">
+    <div class="pm-overlay" data-close></div>
+    <div class="pm-dialog" role="dialog" aria-modal="true" aria-label="Подробнее о товаре">
+      <button type="button" class="pm-close" data-close aria-label="Закрыть">&times;</button>
+      <div class="pm-image"><img id="pm-img" src="" alt=""></div>
+      <div class="pm-body">
+        <h3 class="pm-title" id="pm-title"></h3>
+        <p class="pm-desc" id="pm-desc"></p>
+        <ul class="pm-specs" id="pm-specs"></ul>
+        <a class="btn-primary" href="mailto:info@yaforys.ru">Запросить коммерческое предложение</a>
+      </div>
+    </div>
+  </div>
+
 
   <footer class="site-footer">
     <div class="container">
@@ -132,6 +150,10 @@
       </div>
     </div>
   </footer>
+
+
+  <script>window.PRODUCT_DATA={"1": {"title": "Машина для формирования и склеивания лотков открытого типа из гофрированного картона Q-1530", "img": "images/boix-q1530.jpg", "desc": "Машина для формирования и склеивания лотков открытого типа из гофрокартона: формирует лоток из плоской заготовки с проклейкой углов."}, "2": {"title": "Машина для формирования и склеивания гофрокартонных лотков с открытым верхом Q-4000", "img": "images/boix-q4000.jpg", "desc": "Высокопроизводительная машина для формирования гофрокартонных лотков с открытым верхом — для упаковки овощей, фруктов и пищевой продукции."}};</script>
+  <script src="catalog.js"></script>
 
 </body>
 </html>
