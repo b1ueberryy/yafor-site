@@ -1585,3 +1585,15 @@ a:hover {
     gap: 16px;
   }
 }
+
+/* Текстовая карточка в сетке партнёров (собственное производство) */
+.partner-card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.45;
+  color: var(--color-primary);
+}
